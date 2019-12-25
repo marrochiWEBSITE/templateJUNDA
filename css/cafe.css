@@ -26,6 +26,9 @@ hr {
 .uppercase{
     text-transform: uppercase;
 }
+.justify{
+  text-align: justify;
+}
 .float-l{
     float: left;
 }
@@ -141,7 +144,7 @@ hr {
     padding-bottom: 10px;
     background-color: #fff;
     border-color: #e7e7e7;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20)
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20);
   }
   
   li {
@@ -269,6 +272,11 @@ hr {
   .bs1{
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
   }
+  .bs2{
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(153,153,153,1);
+    -moz-box-shadow: 2px 2px 7px 1px rgba(153,153,153,1);
+    box-shadow: 2px 2px 7px 1px rgba(153,153,153,1);
+  }
 
   /*-------------------------- scale 
    */
@@ -345,4 +353,43 @@ hr {
   .croot-t {
     margin-bottom: 0.75rem;
   }
-
+/* ------------------------------------------ button 
+----------*/
+  .button1 {
+    background-color: #d1d1d1; color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+    .button1:hover {
+    background-image: linear-gradient(to right top, #009285, #00ac82, #29c371, #68d951, #a8eb12);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+    .button2 {
+      color: black;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      }
+      .button2:hover {
+       color:red;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        }
