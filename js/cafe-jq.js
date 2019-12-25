@@ -14,3 +14,7 @@ window.setTimeout("waktu()",1000);
         document.getElementById("menit").innerHTML = tanggal.getMinutes();
         document.getElementById("detik").innerHTML = tanggal.getSeconds();
     }
+
+ //----------------------------- form
+ 
+ 
