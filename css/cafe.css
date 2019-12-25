@@ -9,6 +9,17 @@ body{
 a{
     text-decoration: none;
 }
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
 .dn{
     display: none;
 }
@@ -29,27 +40,34 @@ a{
     margin-right: auto;
     margin-left: auto;
   }
+  .tepiKK2{
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   
   @media (min-width: 576px) {
-    .tepiKK{
+    .tepiKK,.tepiKK2{
       max-width: 540px;
     }
   }
   
   @media (min-width: 768px) {
-    .tepiKK{
+    .tepiKK,.tepiKK2{
       max-width: 720px;
     }
   }
   
   @media (min-width: 992px) {
-    .tepiKK{
+    .tepiKK,.tepiKK2{
       max-width: 960px;
     }
   }
   
   @media (min-width: 1200px) {
-    .tepiKK{
+    .tepiKK,.tepiKK2{
       max-width: 1140px;
     }
   }
@@ -205,6 +223,46 @@ a{
     }
   }
 
+  .col-75x {   
+    width: 75%;
+  }
+  
+  
+  .col-25x {
+    width: 25%;
+  }
+  
+  .col-50x {   
+    width: 50%;
+  }
+  
+  
+  .col-100x {
+    width: 100%;
+    
+  }
+  
+  .c-col-x {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  
+  .r-col:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    .col-75x, .col-25x, .col-50x, .col-100x{   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
  
   /* ------------------------ bs
   */
@@ -240,3 +298,51 @@ a{
      
     }
   }
+ /*-------------------------- croot
+   */
+   .croot-d .croot {
+    margin-bottom: 15px;
+  }
+  
+  @media (min-width: 576px) {
+    .croot-d {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .croot-d .croot {
+      -ms-flex: 1 0 0%;
+      flex: 1 0 0%;
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-left: 15px;
+    }
+  }
+  .croot {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+
+  .croot-b {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+  }
+  
+  .croot-t {
+    margin-bottom: 0.75rem;
+  }
+
