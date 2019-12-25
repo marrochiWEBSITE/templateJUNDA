@@ -15,7 +15,12 @@ a{
 .uppercase{
     text-transform: uppercase;
 }
-
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
 /* tepi kanan dan kiri */
 .tepiKK{
     width: 100%;
@@ -97,4 +102,37 @@ a{
     }
   }
   
+
+  /* ------------------------------------------------- HEADER DAN NAVBAR */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    border-color: #e7e7e7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.20)
+  }
   
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: transparent;
+  }
+  
+  .aktif {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color:#fff;
+  }

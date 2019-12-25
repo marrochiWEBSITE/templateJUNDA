@@ -1,0 +1,42 @@
+.cafe{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+.cafe-header{
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  -webkit-animation-name: cafe-header;
+  animation-name: cafe-header;
+}  
+  @keyframes cafe-header {
+            20%{
+                color: slategray;
+            }
+            40%{
+                color: cyan;
+            }
+            80%{
+                color:rgb(0, 0, 0);
+            }
+            90%{
+                
+                color: crimson;
+            }
+  }
+  @-webkit-keyframes cafe-header {
+                20%{
+                    color: crimson;
+                }
+                40%{
+                    color: cyan;
+                }
+                80%{
+                    color:greenyellow;
+                }
+                90%{
+                    color: transparent;
+                }
+  }
